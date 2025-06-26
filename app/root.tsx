@@ -25,7 +25,9 @@ export const links: Route.LinksFunction = () => [
 
 import { registerLicense} from "@syncfusion/ej2-base";
 
-registerLicense(import.meta.env.VITE_SYNC_FUSION_LICENSE_KEY)
+import data from "env.json"
+
+registerLicense(data.VITE_SYNCFUSION_LICENSE_KEY);
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
