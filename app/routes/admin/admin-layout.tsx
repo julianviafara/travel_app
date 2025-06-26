@@ -1,7 +1,6 @@
 import { Outlet } from "react-router";
 import {SidebarComponent} from "@syncfusion/ej2-react-navigations";
 import {NavItems} from "../../../components";
-import data from "../../../env.json"
 
 const AdminLayout = () => {
     return (
@@ -11,7 +10,6 @@ const AdminLayout = () => {
                     <NavItems/>
                 </SidebarComponent>
             </aside>
-            <p> <br/>hola {data.VITE_SYNCFUSION_LICENSE_KEY}</p>
             <aside className="children">
                 <Outlet />
             </aside>
