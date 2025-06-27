@@ -1,10 +1,16 @@
 import React from 'react';
+import {Header} from "../../../components";
 
 const AllUsers = () => {
     return (
-        <div>
-            <h1>Timothee Chalamet</h1>
-        </div>
+        <main className="dashboard wrapper">
+            <Header
+                title= "Trips Page"
+                description="Check out our current user in real time"
+            />
+
+            Timothee Chalamet
+        </main>
     );
 };
 

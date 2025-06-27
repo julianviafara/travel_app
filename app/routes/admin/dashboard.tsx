@@ -1,7 +1,16 @@
+import {Header} from "../../../components";
+
 const Dashboard= () =>{
+    const user = {name: 'Julian'};
+
     return (
-        <div>
-        </div>
+        <main className="dashboard wrapper">
+            <Header
+                title={`Hello ${user?.name ?? 'Guest'}`}
+                description="Track activity"
+            />
+            Dashboard content
+        </main>
     );
 }
 
